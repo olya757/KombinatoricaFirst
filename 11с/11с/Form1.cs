@@ -39,9 +39,9 @@ namespace _11с
                 return;
             }
             int P = int.Parse(tBInputP.Text);
-            if (P < 3)
+            if (P < M)
             {
-                MessageBox.Show("Дайте шанс! Отрезков должно быть минимум 3!");
+                MessageBox.Show("Дайте шанс! Отрезков должно быть минимум "+M+"!");
                 tBInputP.Focus();
                 return;
             }

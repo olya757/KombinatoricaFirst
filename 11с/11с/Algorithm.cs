@@ -108,20 +108,27 @@ namespace _11с
 
         public static bool InputElems(string str)
         {
-            
+            str = str.Trim();
             string[] ls = str.Split(' ');
             
             lengths = new List<int>();
             N = 0;
             foreach(var s in ls)
             {
-                int n = int.Parse(s);
-                if (n <= 0)
+                try
+                {
+                    int n = int.Parse(s);
+                    if (n <= 0)
+                    {
+                        return false;
+                    }
+                    lengths.Add(n);
+                    N++;
+                }
+                catch(Exception ex)
                 {
                     return false;
                 }
-                lengths.Add(n);
-                N++;
             }
             lengths.Sort();
             return N >= 3;
