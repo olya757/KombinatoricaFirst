@@ -123,6 +123,7 @@ namespace _11с
                 lengths.Add(n);
                 N++;
             }
+            lengths.Sort();
             return N >= 3;
         }
 
