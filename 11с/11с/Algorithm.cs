@@ -43,15 +43,15 @@ namespace _11с
             return true;
         }
 
-        public static int LEN = 0;
+        public static int LEN=0;
 
-        public static bool CheckForCurrentSide(int len, List<int> vs)
+        public static bool CheckForCurrentSide(int len,  List<int> vs)
         {
             LEN = len;
             int last = 0;
             int i = 0;
             int cnt = 0;
-            while (i < vs.Count && i < P)
+            while (i<vs.Count && i<P)
             {
                 if (last + vs[i] > len) return false;
                 if (last + vs[i] == len)
@@ -77,9 +77,9 @@ namespace _11с
             {
                 for (int i = min; i <= max; i++)
                 {
-                    if (CheckForCurrentSide(i, lengths)) return true;
+                    if (CheckForCurrentSide(i,lengths)) return true;
                 }
-
+                
             }
             while (nextState());
             for (int i = min; i <= max; i++)
@@ -95,7 +95,7 @@ namespace _11с
             M = m;
             P = p;
             int sum = 0;
-            for (int i = 0; i < lengths.Count; i++)
+            for(int i=0;i<lengths.Count;i++)
             {
                 sum += lengths[i];
             }
@@ -108,12 +108,12 @@ namespace _11с
 
         public static bool InputElems(string str)
         {
-
+            
             string[] ls = str.Split(' ');
-
+            
             lengths = new List<int>();
             N = 0;
-            foreach (var s in ls)
+            foreach(var s in ls)
             {
                 int n = int.Parse(s);
                 if (n <= 0)
@@ -161,4 +161,3 @@ namespace _11с
 
     }
 }
-

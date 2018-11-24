@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _11c.Properties
+namespace _11с.Properties
 {
 
 

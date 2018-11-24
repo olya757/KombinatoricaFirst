@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _11c
+namespace _11с
 {
     public partial class Form1 : Form
     {
@@ -47,7 +47,7 @@ namespace _11c
             }
             if (M > Algorithm.N)
             {
-                MessageBox.Show("Слишком большой многоугольник! " + M + "-угольник не может состоять из " + Algorithm.N + " отрезков!");
+                MessageBox.Show("Слишком большой многоугольник! "+M+"-угольник не может состоять из "+Algorithm.N+" отрезков!");
                 tbInputLength.Focus();
                 return;
             }
@@ -56,9 +56,7 @@ namespace _11c
                 MessageBox.Show("Не получится составить " + M + "-угольник :((");
                 return;
             }
-            MessageBox.Show("ПОЛУЧИЛОСЬ!!!\n" + Algorithm.ShowResultToStr());
-            }
+            MessageBox.Show("ПОЛУЧИЛОСЬ!!!\n"+Algorithm.ShowResultToStr());
         }
     }
-
-
+}
